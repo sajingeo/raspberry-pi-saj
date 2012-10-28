@@ -3,6 +3,8 @@
 # email:sajin.geo@gmail.com
 # open source, thanks to adafruit you can also use smbus :-)
 # thanks to my friend Aniket Mathare for the web code and Adafruit for a nice tutorial on EEML
+# this is a cpu usage loger using Jquery
+# this updates an XML files that is used in the html file.
 ##########################################
 import xml.etree.ElementTree as ET
 import os

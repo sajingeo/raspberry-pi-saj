@@ -4,15 +4,19 @@
 # open source, thanks to adafruit you can also use smbus :-)
 # using PMOD TEMP from digilent
 ##########################################
-
+#
+#  refer instrucatables
+#
+###########################################
 from smbus import SMBus
 from Adafruit_I2C import Adafruit_I2C
 import os
 import time
 import psutil
 import eeml
-
-API_KEY = 'mKii5nsNrnsE9RshWqwCiPDT-1-SAKx1L3M5amlpNWt1UT0g'
+## your key
+API_KEY = '**********************************'
+## ur feed ID
 FEED   = 74897
 API_URL = '/v2/feeds/{feednum}.xml' .format(feednum =FEED)
 

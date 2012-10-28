@@ -5,18 +5,30 @@
 # using RGB led from MBLINK
 # thanks to adafruit
 ##########################################
+#
+# refer instructable for required libs.
+#
+#########################################
 import feedparser,time
 from smbus import SMBus
 from Adafruit_I2C import Adafruit_I2C
 import os
 
+## username and password
 USERNAME="tom.tom"
 PASSWORD="password"
 
+## email now in inbox
 MAILSNOW=6579
+
+# frequency of checking
 MAILCHECK=60
+
+## codes for blink M
 RED=[0x63,0xff,0x00,0x00]
 GREEN=[0x63,0x00,0xff,0x00]
+
+## address of blinkM
 data=Adafruit_I2C(0x09)
 
 while(True):
